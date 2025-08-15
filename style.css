@@ -1,0 +1,131 @@
+body {
+    font-family: "Sono", sans-serif;
+    height: 100%;
+    background-color: #DCDCDC;
+}
+
+.pricing-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    gap: 1rem;
+}
+
+hr {
+    width: 50%;         /* makes the line half the container's width */
+    margin: 5px auto;  /* centers it horizontally */
+    border: none;       /* remove default border */
+    border-top: 2px solid #ccc; /* custom line style */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;       /* removes the default indent */
+    margin: 0;             /* optional: remove default top/bottom margin */
+}
+
+li {
+    margin: 20px;
+}
+
+.pricing-plan {
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.plan-title {
+    padding: 50px;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.plan-price {
+    display: flex;
+    flex: 1;
+    align-items: baseline;
+    gap: 5px;
+    padding: 20px;
+}
+
+.amount {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.period {
+    font-size: 1rem;
+    color: #555;
+}
+
+.title-1 {
+    background: linear-gradient(to right, #ec9e45, #ee115b);
+}
+
+.title-2 {
+    background: linear-gradient(to right, #9bbdec, #8534CB);
+}
+
+.title-3 {
+    background: linear-gradient(to right, #44e9d6, #45A0D9);
+}
+
+.plan-features {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.plan-button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background: black;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.plan-button:hover {
+    transform: translateY(-2px); /* subtle lift effect */
+}
+
+.plan-button-1 {
+    background: linear-gradient(to right, #ec9e45, #ee115b);
+}
+
+.plan-button-2 {
+    background: linear-gradient(to right, #9bbdec, #8534CB); 
+}
+
+.plan-button-3 {
+    background: linear-gradient(to right, #44e9d6, #45A0D9);
+}
+
+/* Hint: What can you do with a media query and flexbox? */
+@media (max-width: 1250px) {
+
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    height: 100%;
+    margin: 10px;   
+}
+
+.pricing-plan {
+    margin: 20px
+}
+}
